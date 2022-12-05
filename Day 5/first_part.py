@@ -43,3 +43,6 @@ with open("input.txt", "r", encoding="utf-8") as file:
                 second_stacks_of_crates[to].append(second_stacks_of_crates[from_where].pop())
 
 print(second_stacks_of_crates)
+
+for block, list_od_crates in second_stacks_of_crates.items():
+    print(block, list_od_crates[-1])

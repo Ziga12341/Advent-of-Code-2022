@@ -41,4 +41,8 @@ with open("input.txt", "r", encoding="utf-8") as file:
             # remove last {how_many_iterations} to list and remove it from list that comes from
             second_stacks_of_crates[to].extend(second_stacks_of_crates[from_where][-how_many_iterations:])
             second_stacks_of_crates[from_where] = second_stacks_of_crates[from_where][:-how_many_iterations]
+
 print(second_stacks_of_crates)
+
+for block, list_od_crates in second_stacks_of_crates.items():
+    print(block, list_od_crates[-1])
