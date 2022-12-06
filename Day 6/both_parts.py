@@ -1,5 +1,5 @@
 # first start-of-packet marker ... n = 4
-# first start-of-message marker ... n = 14
+# second start-of-message marker ... n = 14
 def start_of_message(n):
     with open("input.txt", "r", encoding="utf-8") as file:
         datastream_buffer = [character for character in file]
@@ -10,6 +10,6 @@ def start_of_message(n):
 
 
 # first part
-print("Result for second part", start_of_message(4))
+print("Result for first part", start_of_message(4))
 # second part
 print("Result for second part", start_of_message(14))
