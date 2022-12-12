@@ -1,4 +1,5 @@
-with open("input.txt", "r", encoding="utf-8") as file:
+# with open("input.txt", "r", encoding="utf-8") as file:
+with open("larger_test.txt", "r", encoding="utf-8") as file:
 # with open("test.txt", "r", encoding="utf-8") as file:
     visited_by_tail = [(0, 0)]
     visited_by_head = [(0, 0)]
@@ -90,3 +91,4 @@ with open("input.txt", "r", encoding="utf-8") as file:
 
 # test result is 13
 
+# result for larger test is 36
